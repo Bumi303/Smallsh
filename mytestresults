@@ -1,0 +1,192 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 132248
+  Note: your smallsh will report a different PID when evaluating $$
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: Command not found: : No such file or directory
+: 
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: a.out
+mytestresults
+p3testscript
+run.bash
+script_test.bash
+smallsh
+smallsh.c
+smallsh.h
+test.bash
+ultratest.bash
+: 
+: 
+: --------------------
+: ls out junk
+: ls: cannot access ls: No such file or directory
+: 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: junk
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+: wc: wc: No such file or directory
+1 1 5 junk
+1 1 5 total
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: wc: wc: No such file or directory
+:  1  1  5 junk
+ 1  1  5 junk
+ 2  8 28 junk2
+ 4 10 38 total
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: Input file has not been found or does not exist: : No such file or directory
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: Command not found: : No such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: background pid is 132356
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: killing pid 23678 failed: Operation not permitted
+pkill: killing pid 27320 failed: Operation not permitted
+pkill: killing pid 29729 failed: Operation not permitted
+pkill: killing pid 31711 failed: Operation not permitted
+pkill: killing pid 38174 failed: Operation not permitted
+pkill: killing pid 49814 failed: Operation not permitted
+pkill: killing pid 54526 failed: Operation not permitted
+pkill: killing pid 55939 failed: Operation not permitted
+pkill: killing pid 73981 failed: Operation not permitted
+pkill: killing pid 84076 failed: Operation not permitted
+pkill: killing pid 91303 failed: Operation not permitted
+pkill: killing pid 95720 failed: Operation not permitted
+pkill: killing pid 97808 failed: Operation not permitted
+pkill: killing pid 99886 failed: Operation not permitted
+pkill: killing pid 100138 failed: Operation not permitted
+pkill: killing pid 101019 failed: Operation not permitted
+pkill: killing pid 107125 failed: Operation not permitted
+pkill: killing pid 111199 failed: Operation not permitted
+pkill: killing pid 111537 failed: Operation not permitted
+pkill: killing pid 112201 failed: Operation not permitted
+pkill: killing pid 114414 failed: Operation not permitted
+pkill: killing pid 115564 failed: Operation not permitted
+pkill: killing pid 115723 failed: Operation not permitted
+pkill: killing pid 117581 failed: Operation not permitted
+pkill: killing pid 121721 failed: Operation not permitted
+pkill: killing pid 121726 failed: Operation not permitted
+pkill: killing pid 128967 failed: Operation not permitted
+pkill: killing pid 132250 failed: Operation not permitted
+pkill: killing pid 132259 failed: Operation not permitted
+pkill: killing pid 132261 failed: Operation not permitted
+pkill: killing pid 132267 failed: Operation not permitted
+pkill: killing pid 132276 failed: Operation not permitted
+pkill: killing pid 132277 failed: Operation not permitted
+pkill: killing pid 132280 failed: Operation not permitted
+pkill: killing pid 132284 failed: Operation not permitted
+pkill: killing pid 132296 failed: Operation not permitted
+pkill: killing pid 132300 failed: Operation not permitted
+pkill: killing pid 132318 failed: Operation not permitted
+pkill: killing pid 132322 failed: Operation not permitted
+pkill: killing pid 132326 failed: Operation not permitted
+pkill: killing pid 132327 failed: Operation not permitted
+pkill: killing pid 132328 failed: Operation not permitted
+pkill: killing pid 132340 failed: Operation not permitted
+pkill: killing pid 132355 failed: Operation not permitted
+pkill: killing pid 132361 failed: Operation not permitted
+pkill: killing pid 132366 failed: Operation not permitted
+pkill: killing pid 132369 failed: Operation not permitted
+pkill: killing pid 132370 failed: Operation not permitted
+pkill: killing pid 132381 failed: Operation not permitted
+pkill: killing pid 132382 failed: Operation not permitted
+pkill: killing pid 132383 failed: Operation not permitted
+pkill: killing pid 132389 failed: Operation not permitted
+pkill: killing pid 137057 failed: Operation not permitted
+pkill: killing pid 153002 failed: Operation not permitted
+pkill: killing pid 155467 failed: Operation not permitted
+pkill: killing pid 158116 failed: Operation not permitted
+pkill: killing pid 194711 failed: Operation not permitted
+pkill: killing pid 195413 failed: Operation not permitted
+pkill: killing pid 207987 failed: Operation not permitted
+pkill: killing pid 210936 failed: Operation not permitted
+pkill: killing pid 219246 failed: Operation not permitted
+pkill: killing pid 230313 failed: Operation not permitted
+pkill: killing pid 237247 failed: Operation not permitted
+pkill: killing pid 242921 failed: Operation not permitted
+pkill: killing pid 250054 failed: Operation not permitted
+pkill: killing pid 253938 failed: Operation not permitted
+pkill: killing pid 258626 failed: Operation not permitted
+pkill: killing pid 262221 failed: Operation not permitted
+pkill: killing pid 266100 failed: Operation not permitted
+pkill: killing pid 277728 failed: Operation not permitted
+pkill: killing pid 281097 failed: Operation not permitted
+pkill: killing pid 282488 failed: Operation not permitted
+pkill: killing pid 285321 failed: Operation not permitted
+pkill: killing pid 287112 failed: Operation not permitted
+pkill: killing pid 300863 failed: Operation not permitted
+pkill: killing pid 309831 failed: Operation not permitted
+pkill: killing pid 323313 failed: Operation not permitted
+
+Background pid 132356 has terminated: terminated by signal 15
+: 
+: 
+: --------------------
+: sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value)
+: background pid is 132435
+: : 
+: 
+: --------------------
+: pwd
+: /nfs/stak/users/henderha/cs344/henderha_program3
+: 
+: 
+: --------------------
+: cd
+: : 
+: 
+: --------------------
+: pwd (10 points for being in the HOME dir)
+: /nfs/stak/users/henderha
+: 
+: 
+: --------------------
+: mkdir testdir132251
+: : 
+: 
+: --------------------
+: cd testdir132251
+: : 
+: 
+: --------------------
+: pwd (5 points for being in the newly created dir)
+: /nfs/stak/users/henderha/testdir132251
+: --------------------
+: Testing foreground-only mode (20 points for entry newly exit text AND ~5 seconds between times)
+: 
+Entering foreground-only mode (& is now ignored)
+: : Sun May 21 22:08:15 PDT 2023
+: 
+Exiting foreground-only mode
+: 
